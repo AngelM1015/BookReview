@@ -18,11 +18,11 @@ class BooksController < ApplicationController
 
   def create
     @book = current_user.books.build(book_params)
-    @book.category_id = params[:category_id]
-    if @book.save
+    @category = Category.new
+    if @categories.save
       redirect_to root_path
     else
-      render 'new'
+      render :new
     end
   end
 

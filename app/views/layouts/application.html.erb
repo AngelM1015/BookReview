@@ -36,6 +36,14 @@
         <% end %>
       </ul>
     </div>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <% if user_signed_in? %>
+          <li><%= link_to "Add Book", new_book_path %></li>
+        <% end %>
+
+          </ul>
     </div>
   </nav>
 
