@@ -5,8 +5,9 @@
   <%= f.input :author %>
   <%= f.input :author %>
   <%= f.button :submit %>
-<% end %>
-<%= form_for @category.each do |f|%>
-<%= f.input :name%>
-<%= f.button :submit %>
+
+  <%= form_for @category.each do |f|%>
+  <%= f.input :name%>
+  <%= f.button :submit %>
+  <% end %>
 <% end %>
